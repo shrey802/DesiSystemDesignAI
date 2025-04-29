@@ -1,2 +1,2 @@
-Hello! Can you tell me a little about system design and how applications are scaled? 
+Hello! How are you? 
 

@@ -7,7 +7,7 @@ import os
 
 model = ChatGroq(
     model="Gemma2-9b-It",
-    groq_api_key=""
+    groq_api_key="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"
 )
 
 # Prompt template
