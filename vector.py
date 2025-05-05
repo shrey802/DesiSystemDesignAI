@@ -109,7 +109,7 @@ import time
 import re
 
 # Initialize Pinecone client
-os.environ['PINECONE_API_KEY'] = ""
+os.environ['PINECONE_API_KEY'] = "pcsk_JbTgY_8nL8BcQhif14xgerADD1WhLgbJLbZnPzZ5KzsNkfnWYPH6nkaZMFRajhjGs38bg"
 pc = Pinecone(api_key=os.environ['PINECONE_API_KEY'])
 
 index_name = "desi-design-index"
