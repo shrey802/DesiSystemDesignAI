@@ -3,6 +3,7 @@ from translate import translate
 from retrieval import process_query
 from TTS import synthesize
 import pygame
+import time
 
 def main():
     print("🎙️ Welcome to the CLI Voice Assistant. Press 'q' to quit.\n")
@@ -40,27 +41,10 @@ def main():
         except Exception as e:
             print(f"⚠️ Error during translation: {e}")
 
-
         try:
-            para = ""
-            with open('final_output.txt', 'r') as final:
-                para = final.read().strip()
-                synthesize(para, "answer_output.wav")
+            synthesize("answer_output.wav")
         except Exception as e:
             print(f"Error during {e}")
-
-
-        try:
-            print("🎶 Playing the answer...")
-            pygame.mixer.init()  # Initialize the mixer
-            pygame.mixer.music.load("answer_output.wav")  # Load the audio file
-            pygame.mixer.music.play()  # Play the audio file
-
-            # Wait for the audio to finish before continuing
-            while pygame.mixer.music.get_busy():
-                pygame.time.Clock().tick(10)
-        except Exception as e:
-            print(f"⚠️ Error during audio playback: {e}")
 
 
 if __name__ == "__main__":

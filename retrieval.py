@@ -123,7 +123,7 @@ def query_pinecone(user_query, top_k=5, namespace=None):
 def generate_answer_with_groq(context_chunks, user_query):
     context = "\n\n".join([match['metadata']['text'] for match in context_chunks])
     prompt = f"""You are an assistant with deep knowledge of system design.
-Use the following context to answer the user's question as clearly and precisely as possible from the context provided in 5 lines.
+Use the following context to answer the user's question as clearly and precisely as possible from the context provided in short 2 lines.
 
 ### Context:
 {context}

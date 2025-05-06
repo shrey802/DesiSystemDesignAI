@@ -1,5 +1,6 @@
-Please explain to me how to scale applications in cloud computing. 
+How do you scale applications in system design? Explain it to me. 
 
 
-This accurately translates the Hindi sentence while keeping the natural flow of the question. 
+Let me know if you'd like me to elaborate on any specific aspect of scaling applications in system design. 
+
 
