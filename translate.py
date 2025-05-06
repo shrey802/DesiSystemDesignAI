@@ -8,7 +8,7 @@ def translate():
         # Initialize the Groq model
         model = ChatGroq(
             model="Gemma2-9b-It",
-            groq_api_key="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"
+            groq_api_key=""
         )
         print("Model initialized")
 
